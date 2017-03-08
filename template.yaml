@@ -1,6 +1,4 @@
 - job-template:
-   name: '{name}_job'
-   description: 'Automatically generated test'
-   project-type: freestyle
+   name: build-{axe1}-{axe2}-{axe3}
    builders:
-       - shell: '{command}'
+    - shell: "echo Combination {axe1}:{axe2}:{axe3}"

@@ -1,0 +1,4 @@
+- job-template:
+   name: build-{axe1}-{axe2}-{axe3}
+   builders:
+    - shell: "echo Combination {axe1}:{axe2}:{axe3}"

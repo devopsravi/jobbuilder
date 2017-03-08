@@ -31,7 +31,7 @@
      project-id: 'p1'
      jobs:
         - '{value-stream}_{project-id}_bar':
-           downstream: '{value-stream}_{project-id}_foo'
+            downstream: '{value-stream}_{project-id}_foo'
         - '{value-stream}_{project-id}_foo':
       
 - project:
@@ -41,7 +41,3 @@
           value-stream: 'production'
         - 'pipeline2':
           value-stream: 'experimental'
-         
-- defaults:
-     name: 'global'
-     downstream: ''

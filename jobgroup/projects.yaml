@@ -26,16 +26,3 @@
      name: project-name
      jobs:
       - '{name}-tests'
-- job:
-     name: foo-test
-     builders:
-      - shell: 'make test'
-      - builder:
-     name: make-test
-     builders:
-      - shell: 'make test'
-      
-- job:
-     name: foo-test
-     builders:
-      - make-test

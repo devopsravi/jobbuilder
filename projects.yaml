@@ -1,9 +1,9 @@
 - project:
-name: template_variable_defaults
-jobs:
-- 'template-variable-defaults-{num}':
-num: 1
-disabled_var: true
-- 'template-variable-defaults-{num}':
-test_var: Goodbye World
-num: 2
+     name: template_variable_defaults
+     jobs:
+       - 'template-variable-defaults-{num}':
+           num: 1
+           disabled_var: true
+       - 'template-variable-defaults-{num}':
+           test_var: Goodbye World
+           num: 2

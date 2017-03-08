@@ -3,7 +3,7 @@
     display-name: '{value-stream} {project-id} foo'
     publishers:
       - trigger-parameterized-builds:
-      - project: '{downstream}'
+         - project: '{downstream}'
           current-parameters: False
           condition: ALWAYS
           git-revision: True
@@ -13,7 +13,7 @@
      display-name: '{value-stream} {project-id} bar'
      publishers:
       - trigger-parameterized-builds:
-      - project: '{downstream}'
+         - project: '{downstream}'
           current-parameters: False
           condition: ALWAYS
           git-revision: True

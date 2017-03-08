@@ -1,11 +1,7 @@
 - job:
      name: "testingjob"
      builders:
-    # The specialized macro:
-    - addtwo
-   # Generic macro call with a parameter
-    - add:
-      number: "ZERO"
-   # Generic macro called without a parameter. Never do this!
-   # See below for the resulting wrong output :(
-    - add
+      - addtwo
+      - add:
+        number: "ZERO"
+      - add

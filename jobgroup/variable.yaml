@@ -30,17 +30,17 @@
      name: 'pipeline1'
      project-id: 'p1'
      jobs:
-      - '{value-stream}_{project-id}_bar':
-         downstream: '{value-stream}_{project-id}_foo'
-      - '{value-stream}_{project-id}_foo':
+        - '{value-stream}_{project-id}_bar':
+           downstream: '{value-stream}_{project-id}_foo'
+        - '{value-stream}_{project-id}_foo':
       
 - project:
      name: derp
      jobs:
-      - 'pipeline1':
-         value-stream: 'production'
-     - 'pipeline2':
-         value-stream: 'experimental'
+        - 'pipeline1':
+          value-stream: 'production'
+        - 'pipeline2':
+          value-stream: 'experimental'
          
 - defaults:
      name: 'global'

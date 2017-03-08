@@ -22,16 +22,16 @@
      name: 'pipeline2'
      project-id: 'p2'
      jobs:
-      - '{value-stream}_{project-id}_foo':
-          downstream: '{value-stream}_{project-id}_bar'
-      - '{value-stream}_{project-id}_bar':
+        - '{value-stream}_{project-id}_foo':
+             downstream: '{value-stream}_{project-id}_bar'
+        - '{value-stream}_{project-id}_bar':
       
 - job-group:
      name: 'pipeline1'
      project-id: 'p1'
      jobs:
         - '{value-stream}_{project-id}_bar':
-            downstream: '{value-stream}_{project-id}_foo'
+             downstream: '{value-stream}_{project-id}_foo'
         - '{value-stream}_{project-id}_foo':
       
 - project:

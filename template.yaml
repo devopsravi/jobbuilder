@@ -1,4 +1,6 @@
 - job-template:
-    name: '{name}-{pyver}'
-    builders:
-    - shell: 'git co {branch_name}'
+   name: '{name}_job'
+   description: 'Automatically generated test'
+   project-type: freestyle
+   builders:
+       - shell: '{command}'

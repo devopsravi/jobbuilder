@@ -38,6 +38,6 @@
      name: derp
      jobs:
         - 'pipeline1':
-            value-stream: 'production'
+             value-stream: 'production'
         - 'pipeline2':
-            value-stream: 'experimental'
+             value-stream: 'experimental'

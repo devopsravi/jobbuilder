@@ -1,6 +1,6 @@
 - job:
      name: "testingjob"
-     builder:
+    - builder:
      name: a_builder
      builders:
      - shell: |
@@ -8,7 +8,8 @@
       function foo {
        echo "my shell function"
       }
-     builder:
+     
+    - builder:
      name: a_builder
      builders:
       - shell: |

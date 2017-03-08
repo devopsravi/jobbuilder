@@ -1,10 +1,9 @@
 - project:
-   name: project-name
-      jobs:
-    - '{name}-job':
-      name:Swarna
-      command: df -h
-    - '{name}-job':
-       name: Swarna2
-         command: il /etc
-         
+    name: project-example
+    jobs:
+     - '{name}_job':
+         name: getspace
+         command: df -h
+     - '{name}_job':
+         name: listEtc
+         command: ls /etc
